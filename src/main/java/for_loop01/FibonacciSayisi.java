@@ -9,22 +9,22 @@ public class FibonacciSayisi {
         System.out.println("Kac tane fibonacci sayisi gormek istiyorsunuz ?");
         int sayi = scan.nextInt();
 
-        int fibo1 = 1;
-        int fibo2 = 1;
+        int f1 = 1;
+        int f2 = 1;
 
         int fibonacci = 0;
 
-        System.out.print(fibo1 + " " + fibo2);
+        System.out.print(f1 + " " + f2);
 
         for (int i = 2; i < sayi; i++) {
 
-            fibonacci = fibo1 + fibo2;
+            fibonacci = f1 + f2;
 
             System.out.print(" " + fibonacci);
 
-            fibo1 = fibo2;
+            f1 = f2;
 
-            fibo2 = fibonacci;
+            f2 = fibonacci;
 
         }
         System.out.println();
